@@ -34,7 +34,9 @@ function calcularPuntoEquilibrio() {
          Punto de Equilibrio: <strong>${Math.ceil(puntoEquilibrioUnidades)} unidades</strong> <br><br>
          Ingresos necesarios: <strong>$${puntoEquilibrioIngresos.toLocaleString('es-MX', {minimumFractionDigits: 2})}</strong>
     `;
-    function simularFlujo() {
+    
+}
+function simularFlujo() {
     const ingreso = parseFloat(document.getElementById('ingreso-total').value);
     const pmc = parseFloat(document.getElementById('propension-consumo').value);
     const divResultadoFlujo = document.getElementById('resultado-flujo');
@@ -57,5 +59,4 @@ function calcularPuntoEquilibrio() {
         🏦 <strong>Fuga al Sector Financiero (Ahorro):</strong> $${ahorro.toLocaleString('es-MX', {minimumFractionDigits: 2})}<br><br>
         📈 <strong>Multiplicador de la Inversión:</strong> ${multiplicador.toFixed(2)}
     `;
-}
 }
