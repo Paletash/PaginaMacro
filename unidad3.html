@@ -31,21 +31,14 @@
             <h3>Portafolio de Casos: Cálculo del Punto de Equilibrio</h3>
             <p>Como parte integral de las evidencias de aprendizaje de la materia, la siguiente herramienta permite determinar el nivel de producción y ventas en el que los ingresos totales se igualan a los costos totales, un concepto clave en la gestión y análisis financiero.</p>
             
-            <div class="calculadora" style="margin-top: 20px;">
-                <h4 style="color: #6B1C3A; margin-bottom: 15px;">Calculadora Interactiva de Punto de Equilibrio</h4>
-                
-                <label for="costos-fijos">Costos Fijos Totales ($):</label>
-                <input type="number" id="costos-fijos" placeholder="Ej. 50000">
-
-                <label for="precio-venta">Precio de Venta por Unidad ($):</label>
-                <input type="number" id="precio-venta" placeholder="Ej. 150">
-
-                <label for="costo-variable">Costo Variable por Unidad ($):</label>
-                <input type="number" id="costo-variable" placeholder="Ej. 50">
-
-                <button onclick="calcularPuntoEquilibrio()">Calcular Punto de Equilibrio</button>
-
-                <div id="resultado-calculadora"></div>
+            <div style="margin-top: 20px;">
+                <iframe 
+                    src="https://mi-calculadora-seven.vercel.app"
+                    width="100%" 
+                    height="650px"
+                    frameborder="0"
+                    style="border-radius: 8px; display: block;">
+                </iframe>
             </div>
         </section>
     </main>
@@ -53,7 +46,5 @@
     <footer>
         <p>Proyecto Final - Licenciatura en Negocios Digitales | ESCA Santo Tomás</p>
     </footer>
-
-    <script src="app.js"></script>
 </body>
 </html>
